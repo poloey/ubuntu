@@ -9,3 +9,6 @@ rmdir folderName
 
 //to edit somthing which in root folder
 sudo nautilus 
+
+//to copy all from a exiting folder to another folder
+cp -a . <folderName>
