@@ -1,0 +1,11 @@
+type "sudo blkid"
+you will get all UUID
+
+
+<file system> <mount point>   <type>  <options>       <dump>  <pass>
+UUID={YOUR-UID}    {/path/to/mount/point}               {file-system-type}    defaults,errors=remount-ro 0       1
+like following
+UUID=509840E89840CDE2    /windows_one   ntfs   defaults,errors=remount-ro 0       1
+UUID=0CEA31F5EA31DC20    /windows_two       ntfs   defaults,errors=remount-ro 0       1
+
+"sudo subl /etc/fstab" and paste the stateabove line there
