@@ -1,13 +1,13 @@
 //for authorizition
 sudo chmod 777 -R htdocs
 
-//delte non empty folder
+//delete non empty folder
 sudo rm -rf folderName
 
 //delete empty folder
 rmdir folderName
 
-//to edit somthing which in root folder
+//to edit something which in root folder
 sudo nautilus 
 
 //to copy all from a exiting folder to another folder
