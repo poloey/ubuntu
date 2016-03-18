@@ -1,0 +1,6 @@
+//to minimize
+alt + space + N
+
+
+//to lock
+windows + l
