@@ -12,3 +12,6 @@ sudo nautilus
 
 //to copy all from a exiting folder to another folder
 cp -a . <folderName>
+
+//to get the location of file path of the command. like node, gulp, bower
+which <command>

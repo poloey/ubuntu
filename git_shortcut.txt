@@ -1,0 +1,29 @@
+//for status
+git status
+
+//to add file to git 
+git add .
+
+//to pull a branch
+git pull origin <branch>
+
+//to chckout branch 
+git checkout <branchName>
+
+//to reset the changed file as like branch
+git checkout .
+
+//to commit
+git commit -m "<message>"
+
+//to push 
+git push origin <branch name>
+
+//to pull all branch
+git fetch --all
+
+//to change url in git 
+git remote set-url origin https://polodev10@bitbucket.org/vasanth_sai/english-engine.git
+git remote -v
+
+
