@@ -27,3 +27,5 @@ git remote set-url origin https://polodev10@bitbucket.org/vasanth_sai/english-en
 git remote -v
 
 
+//to delete untracked file and folder in git 
+git clean -f -d
