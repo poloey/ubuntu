@@ -15,3 +15,6 @@ cp -a . <folderName>
 
 //to get the location of file path of the command. like node, gulp, bower
 which <command>
+
+//to exit terminal from terminal
+exit
