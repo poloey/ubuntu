@@ -131,11 +131,12 @@ pseudo command
 
 
 
-
+:q - for quit vim
+:q! - for quit vim without saving
 t - put the cursor right before of the 'word' forwarding;
 T word - put the cursor right before of the 'word' backward;
-hello the 
+:echo @% = show the current file
+:ls = show all buffer
+:b4 = buffer no 4
+:b <file name> {can be auto complete by tab} = open <file name> buffer
 
-
-
-.ci { margin: 10px; }

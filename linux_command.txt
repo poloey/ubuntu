@@ -18,3 +18,6 @@ which <command>
 
 //to exit terminal from terminal
 exit
+
+//to make a simple python server
+python -m SimpleHTTPServer
