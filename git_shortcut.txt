@@ -34,3 +34,5 @@ git clean -f -d
 
 git clone --depth 1 <git url>
 
+//to know remote git  //kind of checking version in case of other app
+git remote -v
