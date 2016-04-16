@@ -21,3 +21,11 @@ exit
 
 //to make a simple python server
 python -m SimpleHTTPServer
+
+//to install debian software
+sudo dpkg -i <file>
+
+
+//to make mulitple folder at a time
+mkdir -p one/two/three/four_folder
+
