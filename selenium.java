@@ -104,12 +104,12 @@ public class englishEngineFirstTest {
               wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("poll11")));
               WebElement poll11 = driver.findElement(By.className("poll11"));
               poll11.click();
-              System.out.println("Now pointer in modal");
+              System.out.println("Now it is in modal");
               //Now back to the learn page from poll
               wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("arrow_back")));
               WebElement arrowBackFromPoll = driver.findElement(By.partialLinkText("arrow_back")); 
               arrowBackFromPoll.click();
-              System.out.println("Now pointer in learn page from poll page");
+              System.out.println("Now it is in learn page from poll page");
 
 
               //Now try to enter into Survery Menu
@@ -150,6 +150,10 @@ public class englishEngineFirstTest {
 			  WebElement logoutBtn = driver.findElement(By.className("log-out-button"));
 			  logoutBtn.click();
 			  System.out.println("Succefully logout");
+			  
+			  //to close firefox or anyother browser
+			  driver.close();
+			  System.out.println("Successfully Tested!");
               
               
 	}
