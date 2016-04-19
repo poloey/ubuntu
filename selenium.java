@@ -1,9 +1,12 @@
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.interactions.Actions;
 public class englishEngineFirstTest {
 	public static void main(String[] args) {
               WebDriver driver = new FirefoxDriver();
@@ -70,8 +73,8 @@ public class englishEngineFirstTest {
               arrowBackBtn.click();
               System.out.println("Now its goes to back page");
               String xpathTestMenu = "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div/div[3]/h4";
-              String xpathPollsMenu = "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div/div[4]/h4";
-              String xpathSurveysMenu = "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div/div[5]/h4";
+//              String xpathPollsMenu = "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div/div[4]/h4";
+//              String xpathSurveysMenu = "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div/div[5]/h4";
               //Test menu
               WebElement TestMenu = driver.findElement(By.xpath(xpathTestMenu));
               TestMenu.click();
@@ -88,8 +91,59 @@ public class englishEngineFirstTest {
               WebElement TestSubmitBtn = driver.findElement(By.xpath(xpathTestSubmitBtn));
               TestSubmitBtn.click();
               System.out.println("clicked on submit button and Now it is in the 2nd question");
-              //Now back to the learn page
-              arrowBackBtn.click();
+              //Now back to the learn page from test
+              wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("arrow_back")));
+              WebElement arrowBackFromTest = driver.findElement(By.partialLinkText("arrow_back")); 
+              arrowBackFromTest.click();
+
+              //Now try to enter into Polls Menu
+              String xpathPollsMenu = "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div/div[4]/h4";
+              WebElement PollsMenu = driver.findElement(By.xpath(xpathPollsMenu));
+              PollsMenu.click();
+              //Now inside Polls Menu
+              wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("poll11")));
+              WebElement poll11 = driver.findElement(By.className("poll11"));
+              poll11.click();
+              System.out.println("Now pointer in modal");
+              //Now back to the learn page from poll
+              wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("arrow_back")));
+              WebElement arrowBackFromPoll = driver.findElement(By.partialLinkText("arrow_back")); 
+              arrowBackFromPoll.click();
+              System.out.println("Now pointer in learn page from poll page");
+
+
+              //Now try to enter into Survery Menu
+              String xpathSurveysMenu = "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div/div[5]/h4";
+              WebElement SurveysMenu = driver.findElement(By.xpath(xpathSurveysMenu));
+              SurveysMenu.click();
+              System.out.println("Now it is in Survey page. I dont click on surveys. this is beacause it is locked");
+
+
+              //Now try to enter in to Learn  menu
+              String xpathLearnMenu = "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div/div[2]/h4";
+              WebElement LearnMenu = driver.findElement(By.xpath(xpathLearnMenu));
+              LearnMenu.click();
+              System.out.println("Now it is in Learn page");
+
+//              driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); //this things not working properly
+//              //go to the personal assistant following 4 line of code only for hovering personal assistant
+              Actions action = new Actions(driver);
+              wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("mfb-component__button--main")));
+              WebElement personalAssistant = driver.findElement(By.className("mfb-component__button--main"));
+              action.moveToElement(personalAssistant).build().perform();
+
+              //Now it will click on personal assistant //its giving me trouble 
+              wait.until(ExpectedConditions.elementToBeClickable(By.partialLinkText("chat_bubble")));
+              WebElement AskUs = driver.findElement(By.partialLinkText("chat_bubble")); 
+              AskUs.click();
+              System.out.println("Now ask us modal is opened");
+              
+              //Now I will click on previous query page
+              wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("PREVIOUS QUERIES")));
+              WebElement AskUsPreviousQuaries = driver.findElement(By.partialLinkText("PREVIOUS QUERIES")); 
+              AskUsPreviousQuaries.click();
+              System.out.println("Now Ask us previous queries is shown");
+
 
 			  //logout from the page
 			  wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("log-out-button")));
