@@ -13,7 +13,7 @@ public class englishEngineFirstTest {
               
               //working for login page
 
-              String appUrl = "http://localhost:3000/english-engine";
+              String appUrl = "http://localhost:3000/";
               driver.get(appUrl);
               driver.manage().window().maximize();
               String expectedTitle = "English Engine";
@@ -26,11 +26,11 @@ public class englishEngineFirstTest {
               
               WebElement username = driver.findElement(By.id("name"));
               username.clear();
-              username.sendKeys("9666851953");
+              username.sendKeys("someusername");
 
               WebElement password = driver.findElement(By.id("pass"));
               password.clear();
-              password.sendKeys("iiit123");
+              password.sendKeys("somepasswordvalue");
 
               WebElement sendBtn = driver.findElement(By.id("send"));
               sendBtn.click();
