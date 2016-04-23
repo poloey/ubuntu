@@ -1,0 +1,24 @@
+ctrl shift g = for wrapping the code (This is actually emmet shortcut)
+ctrl k b = for showing sidebar
+ctrl k v = ctrl k then usal shortcut icon = for copy + paste history
+ctrl shift [ = for folding code
+ctrl shift up and down arrow key = bubbling line up and down
+alt = show and hide menu bar
+
+edit - line - reindent = for nice indentation
+go to - jump to matching bracket(ctrl + m)= for bracket matching 
+ctrl + p = go to anything {# for search, css@ for searching syntax, : for go to line number}
+ctrl shift down-arrow = for multiple selection
+ctrl shift c = for opening color code plugin 
+
+ctrl shift / = for block commenting 
+"auto_id_class": true, = this user setting allow to make auto id and class
+"auto_complete_commit_on_tab": true, = this user setting allow the user auto-completion by tab key instead of enter key So that enter key will be functional
+
+ctrl alt j = for matching html tag in emmet
+CTRL+SHIT+R = for reflect value
+Alt + / = for auto completion
+ctrl + shift + m = select everything inside bracket 
+ctrl + l = select the whole line
+shift + delete = delete line
+
