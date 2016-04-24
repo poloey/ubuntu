@@ -1,0 +1,68 @@
+t_on_tab": true,
+    "auto_complete_with_fields": false,
+        "auto_completion": false,
+            "auto_id_class": true,
+                "bold_folder_labels": false,
+                    "caret_extra_bottom": 0,
+                        "caret_extra_top": 6,
+                            "caret_extra_width": 0,
+                                "caret_style": "phase",
+                                    "color_scheme": "Packages/Colorsublime - Themes/Monokai.tmTheme",
+                                        "copyOnMouseSelect": true,
+                                            "fade_fold_buttons": false,
+                                                "folder_exclude_patterns":
+                                                [
+                                                        ".svns",
+                                                                ".gits",
+                                                                        ".hgs",
+                                                                                "CVSs",
+                                                                                        "node_modules",
+                                                                                                "blueprints",
+                                                                                                        "dists"
+                                                                                                            
+                                                ],
+                                                    "font_face": "fira code",
+                                                        "font_size": 11,
+                                                            "gutter": true,
+                                                                "highlight_line": false,
+                                                                    "ignored_packages":
+                                                                    [
+                                                                            "1337 Color Scheme",
+                                                                                    "JSLint",
+                                                                                            "tern_for_sublime"
+                                                                                                
+                                                                    ],
+                                                                        "indent_guide_options":
+                                                                        [
+                                                                                "draw_normal",
+                                                                                        "draw_active"
+                                                                                            
+                                                                        ],
+                                                                            "line_numbers": true,
+                                                                                "matchBracketsAngle": true,
+                                                                                    "match_brackets": true,
+                                                                                        "match_brackets_angle": true,
+                                                                                            "match_brackets_braces": true,
+                                                                                                "match_brackets_content": true,
+                                                                                                    "match_brackets_square": true,
+                                                                                                        "match_selection": true,
+                                                                                                            "match_tags": true,
+                                                                                                                "spell_check": true,
+                                                                                                                    "ternjs":
+{
+            "exclude":
+                [
+                            "wordpress/**",
+                                        "node_moduless/**"
+                                                
+                ]
+                    
+},
+    "theme": "Soda Light.sublime-theme",
+        "theme_otto_global_ui_small": true,
+            "translate_tabs_to_spaces": true,
+                "update_check": false,
+                    "vintage_ctrl_keys": false,
+                        "vintage_start_in_command_mode": true
+                    }
+

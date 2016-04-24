@@ -1,0 +1,42 @@
+
+otstrapped": true,
+    "in_process_packages":
+    [
+        
+    ],
+        "installed_packages":
+        [
+                "1337 Color Scheme",
+                        "All Autocomplete",
+                                "Anaconda",
+                                        "AutoFileName",
+                                                "Babel",
+                                                        "Babel Snippets",
+                                                                "BracketHighlighter",
+                                                                        "Colorsublime",
+                                                                                "DocBlockr",
+                                                                                        "Dracula Color Scheme",
+                                                                                                "Emmet",
+                                                                                                        "Gutter Color",
+                                                                                                                "JavaScript & NodeJS Snippets",
+                                                                                                                        "JsFormat",
+                                                                                                                                "JSLint",
+                                                                                                                                        "LESS",
+                                                                                                                                                "Material Theme",
+                                                                                                                                                        "One Dark Color Scheme",
+                                                                                                                                                                "Package Control",
+                                                                                                                                                                        "React ES6 Snippets",
+                                                                                                                                                                                "ReadmePlease",
+                                                                                                                                                                                        "SideBarEnhancements",
+                                                                                                                                                                                                "TernJS",
+                                                                                                                                                                                                        "Theme - Bamboo",
+                                                                                                                                                                                                                "Theme - Coffee",
+                                                                                                                                                                                                                        "Theme - Monokai",
+                                                                                                                                                                                                                                "Theme - Otto",
+                                                                                                                                                                                                                                        "Theme - Soda",
+                                                                                                                                                                                                                                                "Themr",
+                                                                                                                                                                                                                                                        "Vintage Surround"
+                                                                                                                                                                                                                                                            
+        ]
+    }
+

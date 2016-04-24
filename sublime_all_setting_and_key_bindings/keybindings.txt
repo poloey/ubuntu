@@ -1,0 +1,39 @@
+
+mmand": "exit_insert_mode",
+  "context":
+  [
+      { "key": "setting.command_mode", "operand": false  },
+          { "key": "setting.is_widget", "operand": false  }
+            
+  ]
+},
+{ "keys": ["ctrl+q"], "command": "noop"  },
+{"keys": ["ctrl+alt+shift+l"], "command": "run_macro_file", "args": {"file": "res://Packages/User/temporary_macro.sublime-macro"}},
+
+{ "keys": ["ctrl+shift+y+,"], "command": "expand_abbreviation_by_tab",
+    "context": [
+    {
+              "operand": "source.js", 
+                    "operator": "equal", 
+                          "match_all": true, 
+                                "key": "selector"
+                                    
+    },
+        {   
+                  "key": "selection_empty", 
+                        "operator": "equal", 
+                              "operand": true,
+                                    "match_all": true 
+                                        }
+                                          
+    ]
+    },
+    { "keys": ["tab"], "command": "next_field", "context":
+        [
+            { "key": "has_next_field", "operator": "equal", "operand": true  }
+              
+        ]
+        },
+
+
+        ]
