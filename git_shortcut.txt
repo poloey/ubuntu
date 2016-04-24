@@ -40,3 +40,10 @@ git remote -v
 //in .gitignore ignore certain file type
 *.json
 !spec/*.json
+
+
+//to set new remote
+git remote set-url origin <new git url>
+
+//to push all branches
+git pull --all
