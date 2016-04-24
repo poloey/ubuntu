@@ -1,0 +1,14 @@
+node.js
+sublime
+vim
+eclipse
+chrome
+mozilla
+chromium
+opera
+clementine
+transmission
+
+
+task
+have to fix mounting which shown by moneykatha
