@@ -47,3 +47,6 @@ git remote set-url origin <new git url>
 
 //to push all branches
 git pull --all
+
+//to know all origin and git remote url 
+git remote show origin
