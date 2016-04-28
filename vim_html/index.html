@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>vim tutorial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div>
+  <header id='header'>
+  <h1>VIM Keyboard Shortcuts</h1>
+  <div id='controller'>
+    <button class='selected' id='show_all'>Show All</button>
+    <button id='hide_shortcuts'>Hide Shortcuts</button>
+    <button id='hide_commands'>Hide Commands</button>
+  </div>
+  <p id='source'>
+    Source:
+    <a href='http://www.keyxl.com/aaa8263/290/VIM-keyboard-shortcuts.htm' target='_blank'>http://www.keyxl.com/aaa8263/290/VIM-keyboard-shortcuts.htm</a>
+  </p>
+</header>
+<div class='show_all' id='container'>
+  <h2>Cursor Movement</h2>
+  <div class='wrap'>
+    <table>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>h</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>move left</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>j</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>move down</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>k</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>move up</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>l</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>move right</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>w</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>jump by start of words (punctuation considered words)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>W</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>jump by words (spaces sparate words)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>e</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>jump to end of words (no punctuation)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>b</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>jump backward by words (punctuation considered words)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>B</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>jump backward by words (no punctuation)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>0</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>(zero) start of line</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>^</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>first non-blank character of line</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>$</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>end of line</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>G</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>Go To command (prefix with number)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>i</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>start insert mode at cursor</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>I</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>insert at the beginning of the line</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>A</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>append at the end of the line</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>o</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>open (append) blank line below current line (no need to press return)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>O</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>open blank line above current line</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>ea</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>append at end of word</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>Esc</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>exit insert mode</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p id='note'>Note: Prefix a cursor movement command with a number to repeat it. For example, 4j moves down 4 lines.</p>
+  <h2>Editing</h2>
+  <div class='wrap'>
+    <table>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>r</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>replace a single character (does not use insert mode)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>J</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>join line below to the current one</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>cc</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>change (replace) an entire line</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>cw</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>change (replace) to the end of word</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>c$</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>change (replace) to the end of line</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>s</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>delete character at cursor and subsitute text</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>S</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>delete line at cursor and substitute text (same as cc)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>xp</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>transpose two letters (delete and paste, technically)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>u</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>undo</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>.</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>repeat last command</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <h2>Marking Text (Visual Mode)</h2>
+  <div class='wrap'>
+    <table>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>v</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>start visual mode, mark lines, then do command (such as y-yank)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>V</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>start Linewise visual mode</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>o</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>move to other end of marked area</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>Ctrl+v</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>start visual block mode</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>O</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>move to Other corner of block</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>aw</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>mark a word</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>ab</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>a () block (with braces)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>aB</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>a {} block (with brackets)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>ib</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>inner () block</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>iB</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>inner {} block</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>Esc</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>exit visual mode</span>
+        </td>
+      </tr>
+      <tr></tr>
+    </table>
+  </div>
+  <h2>Visual Commands</h2>
+  <div class='wrap'>
+    <table>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>></span>
+        </td>
+        <td class='command'>
+          <span class='relative'>shift right</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'><</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>shift left</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>y</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>yank (copy) marked text</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>d</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>delete marked text</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>~</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>switch case</span>
+        </td>
+      </tr>
+      <tr></tr>
+    </table>
+  </div>
+  <h2>Cut and Paste</h2>
+  <div class='wrap'>
+    <table>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>yy</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>yank (copy) a line</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>2yy</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>yank 2 lines</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>yw</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>yank word</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>y$</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>yank to end of line</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>p</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>put (paste) the clipboard after cursor</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>P</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>put (paste) before cursor</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>dd</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>delete (cut) a line</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>dw</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>delete (cut) the current word</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>x</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>delete (cut) current character</span>
+        </td>
+      </tr>
+      <tr></tr>
+    </table>
+  </div>
+  <h2>Exiting</h2>
+  <div class='wrap'>
+    <table>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>:w</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>write (save) the file, but don't exit</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>:wq</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>write (save) and quit</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>:q</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>quit (fails if anything has changed)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>:q!</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>quit and throw away changes</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <h2>Search/Replace</h2>
+  <div class='wrap'>
+    <table>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>/pattern</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>search for pattern</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>?pattern</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>search backward for pattern</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>n</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>repeat search in same direction</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>N</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>repeat search in opposite direction</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>:%s/old/new/g</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>replace all old with new throughout file</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>:%s/old/new/gc</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>replace all old with new throughout file with confirmations</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <h2>Working with multiple files</h2>
+  <div class='wrap'>
+    <table>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>:e filename</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>Edit a file in a new buffer</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>:bnext (or :bn)</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>go to next buffer</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>:bprev (of :bp)</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>go to previous buffer</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>:bd</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>delete a buffer (close a file)</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>:sp filename</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>Open a file in a new buffer and split window</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>ctrl+ws</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>Split windows</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>ctrl+ww</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>switch between windows</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>ctrl+wq</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>Quit a window</span>
+        </td>
+      </tr>
+      <tr>
+        <td class='shortcut'>
+          <span class='relative'>ctrl+wv</span>
+        </td>
+        <td class='command'>
+          <span class='relative'>Split windows vertically</span>
+        </td>
+      </tr>
+      <tr></tr>
+    </table>
+    <!--[if lte IE 9]>
+      <style type='text/css'>body{max-width:1024px !important}</style>
+    <![endif]--> 
+
+
+ </div> 
+  <script src="script.js"></script>
+</body>
+</html>
