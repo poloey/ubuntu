@@ -1,3 +1,2 @@
-auto-pairs    emmet-vim      nerdtree          vim-indent-guides  vim-js-indent
-closetag.vim  nerdcommenter  vim-colorschemes  vim-javascript     vim-matchit
-
+AutoComplPop  emmet-vim  nerdcommenter  tern_for_vim  vim-addon-mw-utils  vim-colorschemes   vim-javascript           vim-l9        vim-snippets
+auto-pairs    matchit    nerdtree       tlib_vim      vim-closetag        vim-indent-guides  vim-javascript-snippets  vim-snipmate
