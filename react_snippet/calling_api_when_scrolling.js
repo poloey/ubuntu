@@ -1,4 +1,3 @@
-var Campaign = React.createClass({
   componentDidMount: function () {
     window.addEventListener('scroll', this.handleScroll)
   },
