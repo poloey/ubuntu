@@ -1,0 +1,142 @@
+(glossary
+i - insert before
+a - insert after
+c - change
+d - delete
+f - find
+y  - yank which is synonym of copy 
+)
+
+BASIC EDiting
+==============================================
+j - down
+k - up
+h - left
+l - right
+i - insert mode / inside(ci-change inside)
+a - around (ca - change around)
+esc - command mode
+w - arrow word to word forward
+W - arrow full word to word forward
+b - arrow word to word backward
+b - beginning of the word
+e - ending of the word
+B - arrow full word to word backward
+^ - beginning of the line (where line start)
+0 - beginning of the line (where gutter start)
+$ - ending of the line
+} - arrow paragraph to paragraph forward
+{ - arrow paragraph to paragraph backward
+f and letter - find this letter following
+F and letter - find this letter backward
+2f and $word, 3f and $word, 4f and $word - find no of $word forwarding
+gg - beginning of the document
+G - Ending of the document
+t $word - put the cursor right before of the '$word' forwarding;
+T $word - put the cursor right before of the '$word' backward;
+x - delete forward character
+X - delete backward character
+u - undow the last action
+H - High 
+M - Middle 
+L - Low
+o - new line below
+O - new line above
+c - change a 
+C - change entire line using shift c ()
+. - repeating last action
+/$word - search for the $word
+n - finding Next
+N - finding Previous
+
+:s/$old_word/$newword - for replace a word
+:s/$old_word/$newword/g - for replace word in full paragraph
+:s/$old_word/$newword/gc - for replace a word in document
+
+dw - delete word
+2dw - 2 delete word
+cw - insert mode by deleting the word
+ciw - change inner word - I mean if I want to delete any text just put the
+cursor right before the word and make cammand 
+2cw - insert mode by deleting the word
+dd - for deleting the  current line
+2dd - for deleting 2 line
+cc- delete the line and put into the insert Mode
+2cc- delete 2 line and put into the insert Mode
+
+ct and $word - delete everything from cursor to $word and put into the insert mode
+//such as:: ct" = delete everything inside "" and put you into insert mode
+ci and $word - delete everything inside to $word boundary and put into the insert mode
+//such as:: ci" = delete everything inside "" and put into the insert mode;
+//such as:: ci{ = delete everything inside the curly braces and put into the insert mode;
+//such ass:: ci( = delete everything inside the first brace and put into the insert mode;
+ct and $word = delete up to $word from present cursor
+dG - delete from cursor to End
+dgg - delete from cursor to begining
+
+//for writing a variable
+ca and $word - delete everything with $word boundary and put into the insert mode
+//such as:: ca" = delete everything with "" and put into the insert mode;
+//such as:: ca{ = delete everything with the curly braces and put into the insert mode;
+//such ass:: ca( = delete everything with the first brace and put into the insert mode;
+
+x - for deleting character / and save in the memory
+p- paste after cursor
+P - paste before cursor
+y - copy the character
+yw - copy the word
+yy - copy the line
+"*p - paste from clipboard
+
+//to install plugin from git 
+git clone --depth 1 <dirct git url>
+//NERDTree::::::shortcut 
+:NERDTreeToogle - toggle sidebar
+ctrl+ww cycle though all windows
+crtl+wh takes you left a window
+crtl+wj takes you down a window
+crtl+wk takes you up a window
+crtl+wl takes you right a window
+t open new tab
+T open new tab while staying in current tab
+gt cycle though all tabs
+gT cycle though all tabs (moves to the left)
+
+//emmet-vim
+//to expland html
+ctrl + y + , 
+
+////spliting tab
+vsplit <file name>
+:vertical resize +5
+:vertical resize -5
+:vertical resize 80
+:res +5
+:res -5
+:resize 80
+
+//omni comletion
+ctrl + n = for text 
+ctrl + x + 0 = for html and css
+
+pseudo command
+:w hello.txt - save a txt file name as hello.txt
+:w - save the file
+:syntax on - for showing syntax highlighting
+:set number - for showing number in gutter
+:imap jj <Esc> - That allow Me to change escape keymap to jj;
+:%y - copy all in vim
+:%y+ - copy all in vim as well as in system clip
+
+
+
+
+:q - for quit vim
+:q! - for quit vim without saving
+t - put the cursor right before of the 'word' forwarding;
+T word - put the cursor right before of the 'word' backward;
+:echo @% = show the current file
+:ls = show all buffer
+:b4 = buffer no 4
+:b <file name> {can be auto complete by tab} = open <file name> buffer
+
