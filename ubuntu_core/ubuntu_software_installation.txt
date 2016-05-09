@@ -1,4 +1,6 @@
 //How to install unity 8 in ubuntu
 sudo apt-get update && sudo apt-get dist-upgrade
 sudo apt-get install unity8-desktop-session-mir
+//to install tree
+sudo apt-get install tree
 

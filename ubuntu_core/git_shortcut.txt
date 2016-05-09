@@ -50,3 +50,7 @@ git pull --all
 
 //to know all origin and git remote url 
 git remote show origin
+
+//seeing git diff
+git diff HEAD^^^^
+
