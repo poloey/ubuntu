@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#section-1">Section 1</a></li>
+    <li><a data-toggle="tab" href="#section-2">Section 2</a></li>
+    <li><a data-toggle="tab" href="#section-3">Section 3</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane fade in active" id="section-1">
+        <p>This is section no 1</p>
+    </div>
+    <div class="tab-pane fade" id="section-2">
+        <p>This is section no 2</p>
+    </div>
+    <div class="tab-pane fade" id="section-3">
+        <p>This is section no 3</p>
+    </div>
+</div>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bstabs</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

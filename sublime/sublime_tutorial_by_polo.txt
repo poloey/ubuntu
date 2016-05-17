@@ -22,3 +22,5 @@ ctrl + shift + m = select everything inside bracket
 ctrl + l = select the whole line
 shift + delete = delete line
 
+OLD_TEXT_FOR_SEARCH\b = Regex: OLD_TEXT_FOR_SEARCH will show in sublime. \b means boundary
+<[A-Z] = Regex search : only find react component like <DivBox /> not <divBox> //i mean I can sort all react component

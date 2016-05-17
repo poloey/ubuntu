@@ -1,0 +1,13 @@
+{
+    "themes.theme": "iplastic",
+    "fonts.fontSize": "16px",
+    "fonts.fontFamily": "Menlo, 'SourceCodePro-Medium', 'MS Gothic', monospace",
+    "vimderbar.mappings": [
+        {
+            "keys": "jj",
+            "toKeys": "<Esc>",
+            "mode": "insert"
+        }
+    ],
+    "closeBrackets": true
+}

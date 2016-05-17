@@ -1,0 +1,47 @@
+<snippet>
+    <content><![CDATA[
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#content-1" data-toggle="collapse" data-parent="#accordion">Collapse 1</a>
+            </h4>
+        </div>
+        <div class="panel-collapse collapse in" id="content-1">
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, facilis, tempore, modi fugit minus libero recusandae laborum sed enim expedita reiciendis magni quisquam nihil vero molestias. Quasi ipsa culpa autem.</p>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#content-2" data-toggle="collapse" data-parent="#accordion">Collapse 2</a>
+            </h4>
+        </div>
+        <div class="panel-collapse collapse" id="content-2">
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, facilis, tempore, modi fugit minus libero recusandae laborum sed enim expedita reiciendis magni quisquam nihil vero molestias. Quasi ipsa culpa autem.</p>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#content-3" data-toggle="collapse" data-parent="#accordion">Collapse 3</a>
+            </h4>
+        </div>
+        <div class="panel-collapse collapse" id="content-3">
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, facilis, tempore, modi fugit minus libero recusandae laborum sed enim expedita reiciendis magni quisquam nihil vero molestias. Quasi ipsa culpa autem.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!------End Accordion---->
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bsaccordion</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

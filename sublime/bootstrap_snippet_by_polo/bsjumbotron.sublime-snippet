@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+<div class="jumbotron">
+    <div class="container">
+        <h1>Bootstrap for Web Design</h1>
+        <h3>Lesson 11: Collapse and Carousels</h3>
+    </div> <!-- end container -->
+</div> <!-- end jumbotron -->
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bsjumbotron</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

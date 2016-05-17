@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+import React, { Component } from 'react';
+
+export default class ${1:${TM_FILENAME/(.+)\..+(.+)\..+|.*/$1/:ComponentName}} extends Component {
+
+}
+
+]]></content>
+    <tabTrigger>rcd</tabTrigger>
+    <scope>source.js -(meta)</scope>
+    <description>React: class component</description>
+</snippet>

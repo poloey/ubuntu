@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+<div class="panel panel-default text-center">
+    <div class="panel-heading">
+        <h3 class="panel-title">Style with Bootstrap</h3>
+    </div><!-- end panel-heading -->
+    <div>
+        <img src="http://placehold.it/200" alt="alt_tag" class="img-circle">
+    </div>
+
+    <p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+
+    <a href="#" target="_blank" class="btn btn-danger btn-block">Style it up with bootstrap</a>
+    <div class="panel-footer">
+        <p>This is the panel footer text</p>
+    </div>
+</div><!-- end panel -->
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bspanel</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
