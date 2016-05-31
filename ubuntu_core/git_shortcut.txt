@@ -54,3 +54,7 @@ git remote show origin
 //seeing git diff
 git diff HEAD^^^^
 
+//mistakenly i pulled wrong buched. following code save my day
+git reflog show  //that will show all previous commit HEAD
+git reset HEAD@{2} //that will reset the HEAD
+
