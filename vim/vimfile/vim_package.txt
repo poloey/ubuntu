@@ -1,0 +1,5 @@
+AutoComplPop   nerdtree            vim-colorschemes         vim-snipmate
+auto-pairs     tern_for_vim        vim-indent-guides        vim-snippets
+emmet-vim      tlib_vim            vim-javascript
+matchit        vim-addon-mw-utils  vim-javascript-snippets
+nerdcommenter  vim-closetag        vim-l9

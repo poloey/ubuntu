@@ -4,6 +4,7 @@ ino jj <esc>
 "set cindent
 "set number is used for gutter numbering
 set number
+set relativenumber
 
 "calling pathogen auto bundle loader
 execute pathogen#infect()
