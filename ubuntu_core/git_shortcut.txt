@@ -58,3 +58,11 @@ git diff HEAD^^^^
 git reflog show  //that will show all previous commit HEAD
 git reset HEAD@{2} //that will reset the HEAD
 
+//to fix case in sensitivity in windows and mac following command is needed
+git config core.ignorecase false
+
+//to know the size of the folder
+du -sh
+
+// to know the size of the individual file inside folder
+du -sh *
