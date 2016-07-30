@@ -1,0 +1,7 @@
+if you want to use vim there is two option. One is "vim mode", another is "vim mode plus".
+vim mode :
+add some snippet to keymap.cson for jj escape
+
+vim mode plus :
+remove all ctrl from vim-mode-plus and add escape for jj
+

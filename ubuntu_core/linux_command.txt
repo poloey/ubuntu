@@ -31,3 +31,8 @@ mkdir -p one/two/three/four_folder
 
 //to delete a program with association 
 sudo apt-get remove --purge wine*
+
+//to maximize and minimize screen
+alt + spce =>then=> x
+//to close screen
+alt + spce =>then=> c

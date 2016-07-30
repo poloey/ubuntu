@@ -66,3 +66,6 @@ du -sh
 
 // to know the size of the individual file inside folder
 du -sh *
+
+//to clean to origin ???? normally if you type git checkout . it will checkout to current origin but all untracked file will be remain. in order to delete untracked file you have to type following command
+git clean -f -d
