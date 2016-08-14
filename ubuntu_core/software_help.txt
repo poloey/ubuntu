@@ -1,3 +1,7 @@
 //how to auto close vlc after completion of playlist
 go to vlc preference. currently you may find you are in simple preference menu. If so select advanced and select playlist from left and click on play and exit. that's all . that will close vlc automaticly after completion of playback.
 
+// lampp server for ubuntu
+in ubuntu you can easily make lampp server using tasksel
+xampp actually good but everytime you need this following command
+/opt/lampp/lampp start
