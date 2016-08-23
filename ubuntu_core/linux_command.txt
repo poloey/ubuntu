@@ -38,6 +38,9 @@ alt + spce =>then=> x
 alt + spce =>then=> c
 
 //grub menu for changing boot menu
-sudo /etc/default/grub
+sudo vi /etc/default/grub
+>> now set the default bootloader in my case windows was in number 5. so index will be 4
+>> now type sudo update-grub
+
 sudo grub-set-default 3 //changed in terminal
 sudo grub-set-default 3
