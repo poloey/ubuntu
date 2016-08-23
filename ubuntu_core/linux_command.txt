@@ -36,3 +36,8 @@ sudo apt-get remove --purge wine*
 alt + spce =>then=> x
 //to close screen
 alt + spce =>then=> c
+
+//grub menu for changing boot menu
+sudo /etc/default/grub
+sudo grub-set-default 3 //changed in terminal
+sudo grub-set-default 3
