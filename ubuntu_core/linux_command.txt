@@ -44,3 +44,9 @@ sudo vi /etc/default/grub
 
 sudo grub-set-default 3 //changed in terminal
 sudo grub-set-default 3
+
+//to know the size of the folder
+du -sh
+
+// to know the size of the individual file inside folder
+du -sh *
