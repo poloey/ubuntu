@@ -50,3 +50,7 @@ du -sh
 
 // to know the size of the individual file inside folder
 du -sh *
+
+//double command in single line
+mkdir foo && cd $_
+mkdir foo && mv <file> $_
