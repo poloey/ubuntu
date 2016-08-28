@@ -150,3 +150,8 @@ vi -p <file1> <file2> <file3> = those file will be open in multiple tab
 :tablast /:tabl = switch to last tab
 :tabm <number> = move the tab position
 :qa / :wqa = for quiting all tab at once
+
+
+
+:noh  - turn off highlight until the next search
+
