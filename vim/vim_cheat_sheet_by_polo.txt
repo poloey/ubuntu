@@ -140,3 +140,13 @@ T word - put the cursor right before of the 'word' backward;
 :b4 = buffer no 4
 :b <file name> {can be auto complete by tab} = open <file name> buffer
 
+
+:tabnew <filename> - for opening a new tab
+vi -p <file1> <file2> <file3> = those file will be open in multiple tab
+:tabf <file*> that will search the file in same directory
+:tabn 
+:tabp = tabn and tabp for switch between tab
+:tabfirst / :tabfir = switch to first tab
+:tablast /:tabl = switch to last tab
+:tabm <number> = move the tab position
+:qa / :wqa = for quiting all tab at once
