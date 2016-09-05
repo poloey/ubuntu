@@ -70,3 +70,5 @@ git remote add origin <url>
 
 //change git url 
 git remote set-url origin <url>
+//to delete a branch
+git branch -b <branch name>
