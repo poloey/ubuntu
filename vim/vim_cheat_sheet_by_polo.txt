@@ -153,5 +153,25 @@ vi -p <file1> <file2> <file3> = those file will be open in multiple tab
 
 
 
-:noh  - turn off highlight until the next search
+:noh / :nohlsearch  - turn off highlight until the next search
+
+:so % = to update source . here so means soruce and % means current file which i am editing
+:tabedit <filename> = open in tab <filename>
+:bd = delete current file from buffer 
+:tabclose / :tabc = close the current tab
+g + _ = jump to the last non-blank character of the line (its woking like ^)
+
+
+//==================some visual mode command=================
+v + o = move to other end of marked area
+v + aw = mark a word
+v + iw = mark a word without space
+v + ab = a block with ()
+v + aB = a block with {}
+v + ib = inner block with ()
+v + iB = inner block with {}
+v + ~ = switch case
+
+
+zz = at the end cursor point middle of the page
 
