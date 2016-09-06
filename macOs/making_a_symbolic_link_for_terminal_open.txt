@@ -1,0 +1,2 @@
+ln -s "/Applications/MAMP/Library/bin/mysql" /usr/local/bin/mysql  - for mysql
+sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl - for sublime
