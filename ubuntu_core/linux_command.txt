@@ -54,3 +54,7 @@ du -sh *
 //double command in single line
 mkdir foo && cd $_
 mkdir foo && mv <file> $_
+
+
+//for owner ship <chown to your apache account>
+sudo chown www-data:www-data -R <you_publishing_directory  || wordpess || megento>
