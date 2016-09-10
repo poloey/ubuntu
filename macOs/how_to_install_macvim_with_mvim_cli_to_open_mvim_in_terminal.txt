@@ -1,0 +1,5 @@
+in order to use mvim in terminal you have to download mvim executable from following address
+https://github.com/b4winckler/macvim/releases/tag/snapshot-73
+
+after extracting the file move MacVim to /Application and 
+mvim(which is actually cli tool like subl) to /usr/local/vim
