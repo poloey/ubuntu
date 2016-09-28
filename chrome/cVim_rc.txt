@@ -1,0 +1,16 @@
+//to open cVim.rc just type :setting
+following setting handy for cVim.
+`
+set noautofocus
+let mapleader = ","
+map <Leader>x :restore<Space>
+`
+
+Here setting I keep under `` quotation.
+first one for input box specially for google. it help me to make inbox out of the focus when load. I can start writing after type f and respective auto generated key.
+
+mapleader is , instead of \.
+mapleader + x will show all closed tab in list (normally I can restore tab usign X. but  I want to restore specific url its really handy)
+
+
+
