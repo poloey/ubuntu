@@ -1,0 +1,2 @@
+//to change mysql password for brew
+$(brew --prefix mysql)/bin/mysqladmin -u root password NEWPASS
