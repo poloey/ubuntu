@@ -1,2 +1,6 @@
 //to change mysql password for brew
 $(brew --prefix mysql)/bin/mysqladmin -u root password NEWPASS
+
+//when macOs update to sierra git command not working
+//to work git command I need to reinstall xcode by following way in terminal
+xcode-select --install
