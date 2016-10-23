@@ -72,3 +72,21 @@ git remote add origin <url>
 git remote set-url origin <url>
 //to delete a branch
 git branch -b <branch name>
+
+//to remove osx keychain
+`
+git credential-osxkeychain erase
+host=github.com
+protocol=https
+[Press Return]
+`
+
+//setting
+git config --global user.name polodev
+git config --global user.email polodev10@gmail.com
+//getting
+git config --global user.name 
+git config --global user.email 
+
+
+
