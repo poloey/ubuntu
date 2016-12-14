@@ -1,0 +1,4 @@
+//for knowing about alias and details about key store
+keytool -v -list -keystore my-release-key.keystore
+//to show the adb menu on mobile screen in developemt
+adb shell input keyevent 82
