@@ -1,3 +1,8 @@
  react-native start
 adb reverse tcp:8081 tcp:8081
 react-native run-android
+
+#cmd+R and cmd+D was not working
+xcode-->product-->Scheme-->Edit Scheme -->Run -->Build Configuration -->Debug
+#for context menu in simulator android
+adb shell input keyevent 82
