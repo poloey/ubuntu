@@ -27,9 +27,9 @@ print('I have ' str(picnicItems.get('orange', 0)) + ' orange')
     
 ###  setdefault() 
 ## it takes 2 arguments. first argument check wheter the key is exists or not and if not exists second argument will assign as value
-spam.setdefault('color' : 'black')
+spam.setdefault('color', 'black')
 spam >>> {'name': 'Zophie', 'age': 7, 'color' : 'black'}
-spam.setdefault('name' : 'simon') #name won't change because name already preset there
+spam.setdefault('name', 'simon') #name won't change because name already preset there
 spam >>> {'name': 'Zophie', 'age': 7, 'color' : 'black'}
 
 ### Pretty Printing using pprint() and pformat()
