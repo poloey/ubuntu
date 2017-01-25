@@ -70,8 +70,10 @@ git remote add origin <url>
 
 //change git url 
 git remote set-url origin <url>
+//to create a branch
+git checkout -b <branch name>
 //to delete a branch
-git branch -b <branch name>
+git branch -d <branch name>
 
 //to remove osx keychain
 `
