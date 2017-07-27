@@ -89,6 +89,8 @@ git config --global user.email polodev10@gmail.com
 //getting
 git config --global user.name 
 git config --global user.email 
+git config --replace-all user.email "new@mail.com"
+git config --replace-all user.name "new name"
 
 
 
