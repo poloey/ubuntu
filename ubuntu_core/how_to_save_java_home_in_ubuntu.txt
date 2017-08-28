@@ -1,0 +1,7 @@
+sudo vi /etc/environment
+  export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64k"
+vi ~/.bashrc
+  source /etc/environment
+
+vi .zshrc or anyother profile
+  export PATH="$JAVA_HOME/bin:$PATH"
