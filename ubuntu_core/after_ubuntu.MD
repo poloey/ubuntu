@@ -127,14 +127,13 @@ sudo apt-get install ranger
 ## Minimize single window application on click
 ~~~
 sudo apt-get install unity-tweak-tool
-sudo apt --fix-broken install
 ~~~
 if you need pair dependency you can run following comand
 ~~~
 sudo apt --fix-broken install
 ~~~
 
-functionality will be available (Unity Tweak Tool)>Launcher>Minimize single window application on click
+functionality will be available `Unity Tweak Tool > Launcher > Minimize single window application on click`
 
 
 
