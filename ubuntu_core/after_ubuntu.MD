@@ -38,8 +38,13 @@ I can make a file with load of alias and load to .zshrc by following
 source ~/.zsh_alias 
 ~~~
 
-font 
+####to install font and solarized theme      
 zsh icon require power line font. I fork a repo from another author. 
+
+[https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a](https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a)
+
+mine
+
 [https://gist.github.com/polodev/444028fb558bed0fbe6131bf288230f0]( https://gist.github.com/polodev/444028fb558bed0fbe6131bf288230f0)
 
 for visual tweeking terminal using lot of theme. Here I have to link how to use sever color scheme and background (terminal theme)   
