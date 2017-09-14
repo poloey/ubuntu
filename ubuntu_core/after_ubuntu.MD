@@ -38,7 +38,7 @@ I can make a file with load of alias and load to .zshrc by following
 source ~/.zsh_alias 
 ~~~
 
-####to install font and solarized theme      
+#### to install font and solarized theme      
 zsh icon require power line font. I fork a repo from another author. 
 
 [https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a](https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a)
