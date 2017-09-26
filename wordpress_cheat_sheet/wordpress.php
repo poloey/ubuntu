@@ -37,7 +37,7 @@ header_image();
 wp_nav_menu()
 
 wp_nav_menu(array(
-    'theme_location' => 'prodhanmenu'
+    'theme_location' => 'mainmenu'
   ))
 wp_nav_menu(array(
     'theme_location' => 'footerMenu'
@@ -60,7 +60,6 @@ get_header();
 get_footer();
 page.php > single.php
 the_permalink();
-^^^^^^^
 =======================part 5==================
 dyanamic_sidebar('leftsidebar')
 
@@ -79,7 +78,7 @@ wp_footer()
 body_class();
 
 wp_nav_menu(array(
-    'theme_location' => 'prodhanmenu'
+    'theme_location' => 'mainmenu'
   ))
 
 .current-menu-item{appriate style}
