@@ -1,4 +1,5 @@
-﻿
+﻿# Development Environment setup after Installing Ubuntu
+
 ## Installing vim
 ~~~
 sudo apt-get installing vim
@@ -7,7 +8,7 @@ sudo apt-get installing vim
 ## ZSH
 Installing zsh in ubuntu
 ~~~
-sudo apt insntall zsh
+sudo apt-get install zsh
 ~~~
 
 after installing zsh now I have to configure by downloading ad installing oh-my-zsh configuration through curl or wget
@@ -77,15 +78,15 @@ sudo ln -s /opt/lampp/bin/mysql /usr/bin/mysql
 ## Installing composer
 first install some php extension for php. Those extension is essential for installing laravel
 ~~~
-$ apt install php-mcrypt php-gd php-mbstring
+apt install php-mcrypt php-gd php-mbstring
 ~~~
 if php in your path download from following [composer official site](https://getcomposer.org/download/). After downloading composer.phar file move composer.phar file to /usr/bin/composer folder
 ~~~
-$ sudo mv composer.phar /usr/bin/composer
+sudo mv composer.phar /usr/bin/composer
 ~~~
 adding composer bin folder to the path for composer global package (.zshrc)
 ~~~
-$ $HOME/.config/composer/vendor/bin/:
+$HOME/.config/composer/vendor/bin/:
 ~~~
 For tinkering laravel project i need readline.  
 By using rlwrap prefix command i can cycle through previous command in laravel tinker
@@ -98,7 +99,7 @@ rlwrap php artisan rlwrap
 ## Installing nodejs in ubuntu  (currently i am using nvm apporach)
 https://github.com/nodesource/distributions   
 
-## Insntall nodejs with nvm (https://github.com/creationix/nvm)
+## Install nodejs with nvm (https://github.com/creationix/nvm)
 ~~~
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
 ~~~
@@ -124,16 +125,26 @@ sudo apt-get install tree
 sudo apt-get install ranger
 ~~~
 
-## Minimize single window application on click
+### Minimize single window application on click
 ~~~
 sudo apt-get install unity-tweak-tool
 ~~~
-if you need pair dependency you can run following comand
+### If you need pair dependency you can run following command (It required when I installed vscode)
 ~~~
 sudo apt --fix-broken install
 ~~~
 
+### To minimize single window app click
 functionality will be available `Unity Tweak Tool > Launcher > Minimize single window application on click`
+
+### To keep terminal new tab in same director I have put following code last line of `.zshrc` file.
+~~~
+. /etc/profile.d/vte.sh
+// in my case 
+. /etc/profile.d/vte-2.91.sh
+~~~
+
+
 
 
 
