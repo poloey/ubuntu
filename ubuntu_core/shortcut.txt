@@ -1,9 +1,0 @@
-//to minimize
-alt + space + N
-
-
-//to lock
-windows + l
-
-//to open a terminal in new tab , windows
-ctrl + shift + t, ctrl + shift + n
