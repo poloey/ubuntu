@@ -97,6 +97,7 @@ rlwrap php artisan rlwrap
 
 
 ## Installing nodejs in ubuntu  (currently i am using nvm apporach)
+You have to install nvm after fully installing zsh shell. since it will add path to .zshrc file 
 https://github.com/nodesource/distributions   
 
 ## Install nodejs with nvm (https://github.com/creationix/nvm)
@@ -142,6 +143,11 @@ functionality will be available `Unity Tweak Tool > Launcher > Minimize single w
 . /etc/profile.d/vte.sh
 // in my case 
 . /etc/profile.d/vte-2.91.sh
+~~~
+
+### To manage teminal credential
+~~~
+sudo apt install keepassx
 ~~~
 
 
