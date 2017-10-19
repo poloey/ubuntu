@@ -10,7 +10,7 @@ SHOW DATABASES;
 
 ### To select a database
 ~~~sql
-US EdatabaseName;
+USE databaseName;
 ~~~   
 
 ### To show tables;
