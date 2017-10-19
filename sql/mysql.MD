@@ -1,35 +1,35 @@
 ### To log in 
-~~~   
+~~~sql
 mysql -u root -p
 ~~~   
 
 ### to show databases
-~~~   
+~~~sql
 SHOW DATABASES;
 ~~~   
 
 ### To select a database
-~~~   
-USE databaseName;
+~~~sql
+US EdatabaseName;
 ~~~   
 
 ### To show tables;
-~~~   
+~~~sql
 SHOW TABLES;
 ~~~   
 
 ### To show details of a specific table
-~~~   
+~~~sql
 DESCRIBE tableName;
 ~~~   
 
 ### to create a database
-~~~   
+~~~sql
 CREATE DATABASE databaseName
 ~~~   
 
 ###to delete a database 
-~~~   
+~~~sql
 DROP DATABASE databaseName
 ~~~   
 
@@ -134,7 +134,7 @@ id INT(11) FIRST;
 ~~~   
 
 ### How to export and import mysql file
-~~~
+~~~sql
 mysqldump -p -uroot <databasename> > location/backup.sql
 mysql -p -uroot <databasename> < location/backup.sql;
 ~~~
