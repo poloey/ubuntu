@@ -28,7 +28,7 @@ DESCRIBE tableName;
 CREATE DATABASE databaseName
 ~~~   
 
-###to delete a database 
+### to delete a database 
 ~~~sql
 DROP DATABASE databaseName
 ~~~   
