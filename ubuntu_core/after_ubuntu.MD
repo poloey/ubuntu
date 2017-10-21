@@ -193,6 +193,8 @@ UUID=<UUID>    /your_desired_filename   ntfs   defaults,errors=remount-ro 0     
 ~~~
 `<UUID>` will be replaced by your own UUID which you have get by `sudo blkid` command. Save fstab and restart
 
+# Installing avro in ubuntu
+go to this following link [https://bn.maateen.me/install-avro-keyboard-in-ubuntu/](https://bn.maateen.me/install-avro-keyboard-in-ubuntu/)
 
 
 
