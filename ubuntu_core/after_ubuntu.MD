@@ -150,13 +150,29 @@ functionality will be available `Unity Tweak Tool > Launcher > Minimize single w
 sudo apt install keepassx
 ~~~
 
+### If I ever face grub rescue mode in dual boot ubuntu and windows. you will write inside `grub rescue >` console 
+To know all available partitions in grub rescue menu
+~~~bash
+ls  
+~~~
+output might look like following    
+~~~
+(hd0) (hd0,msdos5) (hd0,msdos3) (hd0,msdos2) (hd0,msdos1) (hd1) (hd1,msdos1)
+~~~
 
-
-
-
-
-
-
-
-
-
+You can check appropriate ubuntu partition by checking them
+~~~
+ls (hd0,msdos5) //never put any space after `,`
+~~~
+Once you sure about right partitions you will do following. Let, in our case right partition is `(hd0,msdos3`     
+~~~
+set prefix="(hd0,msdos3)/boot/grub"
+set root="(hd0,msdos3)"
+insmod normal
+normal
+~~~
+Once you boot into ubuntu run following 2 command as well:
+~~~
+sudo update-grub
+sudo grub-install /dev/sda
+~~~
