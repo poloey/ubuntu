@@ -164,7 +164,7 @@ You can check appropriate ubuntu partition by checking them
 ~~~
 ls (hd0,msdos5) //never put any space after `,`
 ~~~
-Once you sure about right partitions you will do following. Let, in our case right partition is `(hd0,msdos3`     
+Once you sure about right partitions you will do following. Let, in our case right partition is `(hd0,msdos3)`     
 ~~~
 set prefix="(hd0,msdos3)/boot/grub"
 set root="(hd0,msdos3)"
@@ -176,3 +176,38 @@ Once you boot into ubuntu run following 2 command as well:
 sudo update-grub
 sudo grub-install /dev/sda
 ~~~
+
+
+### How to mounting windows partitions in ubuntu in case of dual boot
+first know the uuid of your windows partitions
+~~~
+sudo blkid
+~~~
+once you know the windows partition uuid open fstab file in sublime or any other editor. In my case I am opening fstab using vim
+~~~
+sudo vi /etc/fstab
+~~~
+added following line in fstab file
+~~~
+UUID=<UUID>    /your_desired_filename   ntfs   defaults,errors=remount-ro 0       1
+~~~
+`<UUID>` will be replaced by your own UUID which you have get by `sudo blkid` command. Save fstab and restart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
