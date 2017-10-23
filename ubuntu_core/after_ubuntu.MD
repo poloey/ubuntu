@@ -2,13 +2,13 @@
 
 ## Installing vim
 ~~~
-sudo apt-get installing vim
+sudo apt install vim
 ~~~
 
 ## ZSH
 Installing zsh in ubuntu
 ~~~
-sudo apt-get install zsh
+sudo apt install zsh
 ~~~
 
 after installing zsh now I have to configure by downloading ad installing oh-my-zsh configuration through curl or wget
