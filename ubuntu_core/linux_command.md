@@ -105,5 +105,14 @@ sudo chown www-data:www-data -R <you_publishing_directory  || wordpess || megent
 sudo dpkg --remove <packageName>
 ~~~
 
+### to write same content in multiple file
+~~~
+echo 'hello' | tee -a file1 file2
+~~~
+in my case it was like that
+~~~
+echo 'hello world'  | tee -a *.html
+~~~
+
 
 
