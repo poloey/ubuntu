@@ -178,7 +178,14 @@ sudo grub-install /dev/sda
 ~~~
 
 
-### How to mounting windows partitions in ubuntu in case of dual boot
+## Mounting
+### exfat mounting in ubunutu
+We can mounted exFat formatted External hard drive using `fuse`. We have to install following package
+~~~
+sudo apt-get install exfat-utils exfat-fuse
+~~~
+
+### NTFS mounting in case dual boot
 first know the uuid of your windows partitions
 ~~~
 sudo blkid
@@ -191,7 +198,12 @@ added following line in fstab file
 ~~~
 UUID=<UUID>    /your_desired_filename   ntfs   defaults,errors=remount-ro 0       1
 ~~~
-`<UUID>` will be replaced by your own UUID which you have get by `sudo blkid` command. Save fstab and restart
+`<UUID>` will be replaced by your own UUID which you have get by `sudo blkid` command. Save fstab and restart      
+
+  I have having permission issue in ntfs file. I have solving this issue by installing `NTFS Configuration Tool` from software center. If you have `gprted` installed you have to uninstall it.
+
+
+
 
 # Installing avro in ubuntu
 go to this following link [https://bn.maateen.me/install-avro-keyboard-in-ubuntu/](https://bn.maateen.me/install-avro-keyboard-in-ubuntu/)
