@@ -208,6 +208,10 @@ UUID=<UUID>    /your_desired_filename   ntfs   defaults,errors=remount-ro 0     
 # Installing avro in ubuntu
 go to this following link [https://bn.maateen.me/install-avro-keyboard-in-ubuntu/](https://bn.maateen.me/install-avro-keyboard-in-ubuntu/)
 
+### installing  Java in ubuntu
+first download java file from oracle website. http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html     
+To download manually on your machine follow instruction from https://www.digitalocean.com/community/tutorials/how-to-manually-install-oracle-java-on-a-debian-or-ubuntu-vps
+
 
 
 
