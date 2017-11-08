@@ -65,6 +65,22 @@ download xampp.run file official directory
 sudo chmod +x <xamppfile.run>
 sudo ./<xamppfile.run>
 ~~~
+To give permission to temp file
+~~~
+sudo chmod -R o+w /opt/lampp/
+~~~
+To give permission htdocs recursively
+~~~
+sudo chmod 777 -R htdocs
+~~~
+for further reading https://azuraakbar.wordpress.com/2012/05/30/52/
+
+
+
+
+
+
+
 
 
 ## Add php mysql to path
