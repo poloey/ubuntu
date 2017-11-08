@@ -65,6 +65,12 @@ download xampp.run file official directory
 sudo chmod +x <xamppfile.run>
 sudo ./<xamppfile.run>
 ~~~
+xampp doesn't comes with desktop entry. So what we can do ? We can add a alias following
+~~~
+alias xampp="sudo /opt/lampp/manager-linux-x64.run"
+~~~
+
+
 To give permission to temp file
 ~~~
 sudo chmod -R o+w /opt/lampp/
@@ -73,7 +79,28 @@ To give permission htdocs recursively
 ~~~
 sudo chmod 777 -R htdocs
 ~~~
-for further reading https://azuraakbar.wordpress.com/2012/05/30/52/
+for further reading regarding xampp https://azuraakbar.wordpress.com/2012/05/30/52/    
+How to start xampp control panel in ubuntu
+~~~
+sudo gedit /usr/share/applications/xampp-control-panel.desktop
+~~~
+paste the following code if you have 64bit pc
+~~~
+[Desktop Entry]
+Encoding=UTF-8
+Name=XAMPP Control Panel
+Comment=Start and Stop XAMPP
+Exec=gksudo /opt/lampp/manager-linux-x64.run
+Icon=/opt/lampp/htdocs/favicon.ico
+Categories=Application
+Type=Application
+Terminal=false
+~~~
+state above stuff getting from following link https://askubuntu.com/questions/890818/ubuntu-16-04-how-to-start-xampp-control-panel
+
+
+
+
 
 
 
