@@ -114,5 +114,7 @@ in my case it was like that
 echo 'hello world'  | tee -a *.html
 ~~~
 
-
-
+### to zip a file
+~~~
+zip -r php.zip php
+~~~
