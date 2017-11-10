@@ -200,7 +200,7 @@ Terminal 2:
 ~~~
 cd `v`
 ~~~
-getting tutorial from [stack overlow](https://stackoverflow.com/questions/5130968/how-can-i-copy-the-output-of-a-command-directly-into-my-clipboard)
+getting tutorial from [stack overlow](https://stackoverflow.com/questions/5130968/how-can-i-copy-the-output-of-a-command-directly-into-my-clipboard)    visit [main repo](https://github.com/astrand/xclip)
 
 ### Minimize single window application on click
 ~~~
