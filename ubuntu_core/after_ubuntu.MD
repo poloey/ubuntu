@@ -163,11 +163,44 @@ nvm use 8
 sudo apt-get install bcmwl-kernel-source
 ~~~
 
-## Installing ranger and tree for fun
+## Handy terminal application ranger and tree for fun
 ~~~
 sudo apt-get install tree
 sudo apt-get install ranger
 ~~~
+
+### Handy copy paste in terminal using xclip (only 16kb)
+~~~
+sudo apt-get install xclip
+~~~
+You can then pipe the output into xclip to be copied into the clipboard:
+
+~~~
+cat file | xclip
+~~~
+To paste the text you just copied, you shall use:
+
+~~~
+xclip -o
+~~~
+To simplify life, you can set up an alias in your .bashrc / .zshrc file as I did:
+
+~~~
+alias c="xclip"
+alias v="xclip -o"
+~~~
+
+To see how useful this is, imagine I want to open my current path in a new terminal window (there may be other ways of doing it like Ctrl+T on some systems, but this is just for illustration purposes):    
+Terminal 1:
+~~~
+pwd | c
+~~~
+
+Terminal 2:
+~~~
+cd `v`
+~~~
+getting tutorial from [stack overlow](https://stackoverflow.com/questions/5130968/how-can-i-copy-the-output-of-a-command-directly-into-my-clipboard)
 
 ### Minimize single window application on click
 ~~~
