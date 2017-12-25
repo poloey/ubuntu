@@ -29,6 +29,14 @@ we can logout from `password and keys > login >  network password`
 * installing package controll
 * clone my 2 repo
 
+## for fixing sound in x250
+I temporarily solved that problem on my x230.
+
+Switch to terminal mode via `Ctrl+Alt+F1` and log in.
+Stop the display manager LightDM with: `sudo service lightdm stop`
+Reload ALSA with: `sudo alsa reload`
+Then restart LightDM with: `sudo service lightdm start`
+
 
 ## for further shell customization 
 ~~~
