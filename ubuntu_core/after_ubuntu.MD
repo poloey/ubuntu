@@ -1,8 +1,27 @@
 ﻿# Development Environment setup after Installing Ubuntu
+sudo apt upgrade
+sudo apt update
 
 ## Installing vim
 ~~~
 sudo apt install vim
+~~~
+
+
+## Installing git
+~~~
+sudo apt installl git
+~~~
+
+## installing sublime 
+* Installing sublime from official website
+* installing package controll
+* clone my 2 repo
+
+
+## for further shell customization 
+~~~
+https://github.com/alebcay/awesome-shell
 ~~~
 
 ## ZSH
@@ -39,14 +58,33 @@ I can make a file with load of alias and load to .zshrc by following
 source ~/.zsh_alias 
 ~~~
 
-#### to install font and solarized theme      
-zsh icon require power line font. I fork a repo from another author. 
+All alias can be found do_setting repo of mac
 
-[https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a](https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a)
+### how to install power line font for agnoster theme
+first create a .fonts folder in home directory
+~~~
+makdir ~/.fonts
+~~~
 
-mine
+install powerline font
+~~~
+wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+mv PowerlineSymbols.otf ~/.fonts/
+mkdir -p .config/fontconfig/conf.d 
+~~~
 
-[https://gist.github.com/polodev/444028fb558bed0fbe6131bf288230f0]( https://gist.github.com/polodev/444028fb558bed0fbe6131bf288230f0)
+clean fonts cache
+~~~
+fc-cache -vf ~/.fonts/
+~~~
+
+Move config file
+~~~
+mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+~~~
+
+## How to install theme with profile  in linux terminal
 
 for visual tweeking terminal using lot of theme. Here I have to link how to use sever color scheme and background (terminal theme)   
 [https://github.com/Mayccoll/Gogh]( https://github.com/Mayccoll/Gogh )
@@ -60,6 +98,10 @@ just download plugin form state above git repo and open with libre office.
 
 
 ## Installing xampp in Ubuntu
+first download net-tools for netstat command. since xampp need netstat command
+~~~
+sudo apt install net-tools
+~~~
 download xampp.run file official directory   
 ~~~
 sudo chmod +x <xamppfile.run>
@@ -77,7 +119,7 @@ sudo chmod -R o+w /opt/lampp/
 ~~~
 To give permission htdocs recursively
 ~~~
-sudo chmod 777 -R htdocs
+sudo chmod 777 -R /opt/lampp/htdocs
 ~~~
 for further reading regarding xampp https://azuraakbar.wordpress.com/2012/05/30/52/    
 How to start xampp control panel in ubuntu
@@ -100,22 +142,8 @@ state above stuff getting from following link https://askubuntu.com/questions/89
 
 
 
-
-
-
-
-
-
-
-
-
-
 ## Add php mysql to path
-making a symbolik link for php and mysql
-~~~
-sudo ln -s /opt/lampp/bin/php /usr/bin/php
-sudo ln -s /opt/lampp/bin/mysql /usr/bin/mysql
-~~~
+export PATH=/Opt/lampp/bin:$PATH
 
 
 ## Installing composer
