@@ -140,6 +140,12 @@ xampp doesn't comes with desktop entry. So what we can do ? We can add a alias f
 alias xampp="sudo /opt/lampp/manager-linux-x64.run"
 ~~~
 
+## fixing mysql permission 
+~~~
+sudo chmod 755 /opt/lampp/phpmyadmin/config.inc.php
+~~~
+
+
 
 To give permission to temp file
 ~~~
