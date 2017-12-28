@@ -118,3 +118,21 @@ echo 'hello world'  | tee -a *.html
 ~~~
 zip -r php.zip php
 ~~~
+
+### How to install multiple fonts in ubuntu
+
+copy font to ~/.fonts folder. Then do following command
+
+~~~
+sudo fc-cache -f -v
+~~~
+
+
+
+
+
+
+
+
+
+

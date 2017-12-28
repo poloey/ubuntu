@@ -24,6 +24,13 @@ git config --global credential.helper /usr/share/doc/git/contrib/credential/gnom
 ~~~
 we can logout from `password and keys > login >  network password`
 
+### for finger print in ubuntu
+~~~
+sudo add-apt-repository ppa:fingerprint/fingerprint-gui
+sudo apt update
+sudo apt install libbsapi policykit-1-fingerprint-gui fingerprint-gui
+~~~
+
 ## installing sublime 
 * Installing sublime from official website
 * installing package controll
