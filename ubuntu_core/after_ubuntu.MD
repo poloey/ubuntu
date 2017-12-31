@@ -13,7 +13,8 @@ sudo apt install vim
 
 ## Installing git
 ~~~
-sudo apt installl git
+sudo apt install git
+git config --global core.editor "vim"
 ~~~
 
 ## for storing  git credentials

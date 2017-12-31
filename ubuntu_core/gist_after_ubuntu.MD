@@ -1,7 +1,9 @@
 # software
 
-sudo apt install vim git zsh net-tools rlwrap tree ranger xclip unity-tweak-tool exfat-utils exfat-fuse ruby ruby-dev
+sudo apt install vim git zsh net-tools rlwrap tree ranger xclip unity-tweak-tool exfat-utils exfat-fuse
 
+# only me 
+sudo apt install ruby ruby-dev
 
 
 # sublime
