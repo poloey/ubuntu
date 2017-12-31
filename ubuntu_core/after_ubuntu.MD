@@ -340,6 +340,9 @@ UUID=<UUID>    /your_desired_filename   ntfs   defaults,errors=remount-ro 0     
 
   I have having permission issue in ntfs file. I have solving this issue by installing `NTFS Configuration Tool` from software center. If you have `gprted` installed you have to uninstall it.
 
+#  Installing jekyll
+sudo apt install ruby ruby-dev
+sudo gem install jekyll bundle
 
 
 
