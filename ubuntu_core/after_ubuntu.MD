@@ -91,7 +91,7 @@ All alias can be found do_setting repo of mac
 ### how to install power line font for agnoster theme
 first create a .fonts folder in home directory
 ~~~
-makdir ~/.fonts
+mkdir ~/.fonts
 ~~~
 
 install powerline font
@@ -99,7 +99,7 @@ install powerline font
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 mv PowerlineSymbols.otf ~/.fonts/
-mkdir -p .config/fontconfig/conf.d 
+mkdir -p ~/.config/fontconfig/conf.d 
 ~~~
 
 clean fonts cache
