@@ -177,7 +177,7 @@ state above stuff getting from following link https://askubuntu.com/questions/89
 
 
 ## Add php mysql to path
-export PATH=/Opt/lampp/bin:$PATH
+export PATH=/opt/lampp/bin:$PATH
 
 
 ## Installing composer
