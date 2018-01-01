@@ -17,6 +17,16 @@ sudo apt install git
 git config --global core.editor "vim"
 ~~~
 
+## deleting lock file 
+~~~
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+~~~
+
+
+
+
 ## for storing  git credentials
 ~~~
 sudo apt-get install libgnome-keyring-dev
