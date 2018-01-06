@@ -365,6 +365,16 @@ first download java file from oracle website. http://www.oracle.com/technetwork/
 To download manually on your machine follow instruction from https://www.digitalocean.com/community/tutorials/how-to-manually-install-oracle-java-on-a-debian-or-ubuntu-vps
 
 
+### Installing vigedit
+bzr is a version control 
+~~~bash
+sudo apt instal bzr
+bzr branch http://bazaar.launchpad.net/~tristil/vigedit/main-method
+cd main-method
+python install.py
+~~~
+Now open your gedit and goto `Edit > Preferences > Plugins` and check vigedit. Your gedit will turn into basic vi editor.
+
 
 
 
