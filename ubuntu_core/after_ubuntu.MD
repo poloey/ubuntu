@@ -294,10 +294,6 @@ functionality will be available `Unity Tweak Tool > Launcher > Minimize single w
 . /etc/profile.d/vte-2.91.sh
 ~~~
 
-### To manage teminal credential
-~~~
-sudo apt install keepassx
-~~~
 
 ### If I ever face grub rescue mode in dual boot ubuntu and windows. you will write inside `grub rescue >` console 
 To know all available partitions in grub rescue menu
@@ -352,8 +348,11 @@ UUID=<UUID>    /your_desired_filename   ntfs   defaults,errors=remount-ro 0     
   I have having permission issue in ntfs file. I have solving this issue by installing `NTFS Configuration Tool` from software center. If you have `gprted` installed you have to uninstall it.
 
 #  Installing jekyll
+
+~~~
 sudo apt install ruby ruby-dev
 sudo gem install jekyll bundle
+~~~
 
 
 

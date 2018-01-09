@@ -1,11 +1,6 @@
 # software
 ~~~
-sudo apt install vim git zsh net-tools rlwrap tree ranger xclip unity-tweak-tool exfat-utils exfat-fuse
-~~~
-
-# only me 
-~~~
-sudo apt install ruby ruby-dev
+sudo apt install vim git zsh net-tools rlwrap tree ranger xclip unity-tweak-tool exfat-utils exfat-fuse ruby ruby-dev chromium-browser
 ~~~
 
 
@@ -19,7 +14,7 @@ sudo apt-get update
 sudo apt-get install sublime-text
 ~~~
 
-# zsh path and alias
+# zsh path and alias and nvm (first have to download nvm)
 ~~~
 export PATH=/opt/lampp/bin:$PATH
 export PATH=$HOME/.config/composer/vendor/bin/:$PATH
@@ -27,6 +22,9 @@ alias zshconfig="vi ~/.zshrc"
 alias zshconfig_alias="vi ~/.zsh_alias" 
 source ~/.zsh_alias
 alias xampp="sudo /opt/lampp/manager-linux-x64.run"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ~~~
 
 
