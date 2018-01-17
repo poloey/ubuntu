@@ -364,6 +364,29 @@ first download java file from oracle website. http://www.oracle.com/technetwork/
 To download manually on your machine follow instruction from https://www.digitalocean.com/community/tutorials/how-to-manually-install-oracle-java-on-a-debian-or-ubuntu-vps
 
 
+## Setting default os in dual boot 
+
+~~~bash
+sudo vi /etc/default/grub
+~~~
+
+from grub change following
+
+~~~bash
+GRUB_DEFAULT=0
+#GRUB_HIDDEN_TIMEOUT=0
+GRUB_HIDDEN_TIMEOUT_QUIET=true
+GRUB_TIMEOUT=2
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+GRUB_CMDLINE_LINUX=""
+~~~
+
+Here change `GRUB_DEFAULT` value. In my case its 0 means `ubuntu` and `4` means windows. take a look grub menu when your pc is booting. you can update `GRUB_TIMEOUT` value lesser for quick booting. save the grub file do following command
+~~~bash
+sudo update-grub
+~~~
+
 
 
 
