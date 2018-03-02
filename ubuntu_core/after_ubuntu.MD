@@ -10,6 +10,10 @@ sudo apt update
 sudo apt install vim
 ~~~
 
+## Installing curl
+~~~
+sudo apt install curl
+~~~
 
 ## Installing git
 ~~~

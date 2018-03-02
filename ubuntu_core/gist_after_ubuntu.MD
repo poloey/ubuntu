@@ -1,6 +1,6 @@
 # software
 ~~~
-sudo apt install vim git zsh net-tools rlwrap tree ranger xclip unity-tweak-tool exfat-utils exfat-fuse ruby ruby-dev chromium-browser
+sudo apt install vim git zsh net-tools rlwrap tree ranger xclip unity-tweak-tool exfat-utils exfat-fuse ruby ruby-dev chromium-browser curl
 ~~~
 
 
