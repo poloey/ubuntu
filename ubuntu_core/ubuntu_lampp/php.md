@@ -23,10 +23,14 @@ sudo apt install phpmyadmin
 ln -s /usr/share/phpmyadmin /var/www/html 
 ~~~
 
-# ini file for enabaling mbstring     
+# ini file for enabaling mbstring and showing display errors 
 
 ~~~bash
 /etc/php/7.1/apache2/phpini 
+~~~
+
+~~~bash
+display_errors = on
 ~~~
 
 
