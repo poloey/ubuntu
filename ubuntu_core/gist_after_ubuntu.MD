@@ -21,7 +21,6 @@ export PATH=$HOME/.config/composer/vendor/bin/:$PATH
 alias zshconfig="vi ~/.zshrc" 
 alias zshconfig_alias="vi ~/.zsh_alias" 
 source ~/.zsh_alias
-alias xampp="sudo /opt/lampp/manager-linux-x64.run"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
