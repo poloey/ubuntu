@@ -47,6 +47,13 @@ sudo apt install libbsapi policykit-1-fingerprint-gui fingerprint-gui
 ~~~
 
 ## installing sublime 
+
+
+~~~
+apt-get install libgtk2.0-0
+~~~
+
+
 * Installing sublime from official website
 * installing package controll
 * clone my 2 repo
