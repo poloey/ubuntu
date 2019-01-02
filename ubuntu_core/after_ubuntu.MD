@@ -214,6 +214,9 @@ sudo mv composer.phar /usr/bin/composer
 adding composer bin folder to the path for composer global package (.zshrc)
 ~~~
 $HOME/.config/composer/vendor/bin/:
+//or
+export PATH=$HOME/.config/composer/vendor/bin/:$PATH
+
 ~~~
 For tinkering laravel project i need readline.  
 By using rlwrap prefix command i can cycle through previous command in laravel tinker
